@@ -1,0 +1,19 @@
+{
+  "name": "jsclock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "clock.js",
+  "scripts": {
+    "dev" : "webpack ./clock.js ./dist/app.js",
+    "server": "webpack-dev-server --entry ./clock.js --output-filename ./dist/app.js --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "webpack": "^3.11.0"
+  },
+  "dependencies": {
+    "webpack-dev-server": "^2.11.1"
+  }
+}

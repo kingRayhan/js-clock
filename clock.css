@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'alarm_clockregular';
+    src: url('fonts/alarm_clock-webfont.woff2') format('woff2'),
+    url('fonts/alarm_clock-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    background-color: tomato;
+}
+.clock-hoder{
+    margin-top: 155px;
+}
+.clock{
+    border: 20px solid #FFF;
+    height: 20rem;
+    width: 20rem;
+    margin: 50px auto;
+    border-radius: 50%;
+    position: relative;
+}
+.hand{
+    position: absolute;
+    height: 3px;
+    width: 50%;
+    background-color: #FFF;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    border-radius: 8px 0 0 8px;
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+.hour-hand{
+    width: 40%;
+    left: 10%;
+    height: 6px;
+}
+.min-hand{
+    width: 45%;
+    left: 5%;
+    height: 4px;
+}
+.second-hand{
+    width: 49%;
+    left: 1%;
+}
+.dot{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 20px;
+    width: 20px;
+    background-color: tomato;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    border-radius: 50%;
+    border: 4px solid #FFF;
+}
+.digital-clock{
+    font-family: 'alarm_clockregular';
+    text-align: center;
+    color: #FFF;
+    font-size: 65px;
+}
